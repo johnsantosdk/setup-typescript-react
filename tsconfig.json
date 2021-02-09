@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "rootDir": "src",
+    "outDir": "dist",
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ],
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+  },
+  "include": [
+    "src",
+    "custom.d.ts"
+  ]
+}

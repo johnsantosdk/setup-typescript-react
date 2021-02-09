@@ -1,0 +1,126 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "standard",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+  "react",
+  "@typescript-eslint",
+  "prettier"
+  ],
+  "rules": {
+    "react/prop-types": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "prettier/prettier": "error",
+    "@typescript-eslint/explicit-function-return-type": "on",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    },
+    // "prettier/prettier": "error",
+    // "arrow-body-style": "off",
+    // "prefer-arrow-callback": "off",
+    "allowIndentationTabs": true,
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
+    ],
+    "semi": [
+      "off",
+      "off"
+    ],
+    "indent": [
+      "error",
+      2
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "semi-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": false
+      }
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "array-element-newline": [
+      "error",
+      "never"
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "always",
+      {
+        "singleValue": false
+      }
+    ],
+    "space-before-blocks": [
+      "error",
+      {
+        "functions": "never",
+        "keywords": "never",
+        "classes": "always"
+      }
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ]
+  }
+}
